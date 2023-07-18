@@ -25,27 +25,23 @@ data --> train, test, validation --> unprocessed x-ray images
 pipeline_outputs --> data --> train, test, validation --> processed x-ray images from FullPipeline.ipynb  
 kmeans_segm --> data --> k-means clustered x-ray images  
 BoneAge.csv --> image number, corresponding bone age, and gender  
-<br/>
 
 ### Data Pre-Processing
 DataAugmentation.ipynb --> Introduces noise and randomness to x-ray imaging to mimic differences in x-ray technology across hospitals  
 FullPipeline.ipynb --> Completes all pre-processing for x-ray images for input  
 KMeans.ipynb --> Applies K-Means clustering to all x-ray images in training set to be used as pseudo ground truths  
-<br/>
 
 ### Proposed Model
 UNET_FINAL.ipynb --> Runs DDU-Net training for the task of image segmentation **\*WARNING: CPU runtime >5 hours\***  
 BoneAgeAssessment.ipynb --> Runs SVR, DF, Boosting, and NN models to predict bone age  
-<br/>
 
 ### Model Weights
 DDUNET_train.h5 --> original model weights with standard loss  
 DDUNET_train_custom_loss[_2].h5 --> model weights with proposed loss  
 **FINAL_UNET_MODEL.h5 --> model weights for proposed model and loss w/ optimal hyperparameters**
-<br/>
 
 ### Logs
-logs, logs_ddunet, logs_ddunet_custom_loss[_2], logs_dice --> loss during u-net training to be used with tensorboard  
+logs, logs_ddunet, logs_ddunet_custom_loss[_2], logs_dice --> loss during u-net training to be used with tensorboard
 <br/>
 <br/>
 
