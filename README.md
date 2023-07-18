@@ -15,7 +15,7 @@ Pandas, Numpy, CV2, SKImage, MatPlotLib, TensorFlow, SKLearn
 ### Information
 Data augmentation, full pipeline, and K-Means clustering does not need to be run. Results are reproducible with seed 42 and stored in folders in repository.  
 UNET_FINAL does not need to be run. Model weights are stored in FINAL_UNET_MODEL.h5.  
-BoneAgeAssessment must be run to view results.  
+BoneAgeAssessment must be run to view results.
 <br/>
 <br/>
 
